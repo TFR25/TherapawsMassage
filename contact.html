@@ -25,19 +25,35 @@
       </div>
     </header>
     <section class="page">
-        <div class="container">
-            <h1>Hello ......</h1>
-            <p>Write about yourself</p>
+      <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <!-- Web3Forms Access Key -->
+          <input
+            type="hidden"
+            name="access_key"
+            value="1d26ee6b-f69c-49b3-97de-d2dffa5b7955"
+          />
 
-            <h2>Credential 1</h2>
-           <p>...........</p>
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
 
-            <h2>Credential 2</h2>
-            <p>.........</p>
+          <!-- Honeypot Spam Protection -->
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display: none"
+          />
 
-            <h2>Credential 3</h2>
-            <p>..........</p>
-        </div>
+          <!-- Submit Button -->
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
     </section>
     <!-- Footer -->
     <footer id="copyright"></footer>

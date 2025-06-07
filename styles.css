@@ -49,7 +49,7 @@ header h1 {
   height: 200px;
   margin-bottom: 0 !important;
   max-width: 350px;
-   width: auto;
+  width: auto;
 }
 
 /* Adjust logo size for smaller screens */
@@ -58,7 +58,7 @@ header h1 {
     height: 100px;
   }
 
-    .business-name {
+  .business-name {
     display: none;
   }
 
@@ -264,8 +264,12 @@ footer {
   margin-top: 2rem;
 }
 
-.mySlides {display: none;}
-img {vertical-align: middle;}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -303,6 +307,50 @@ img {vertical-align: middle;}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+  .text {
+    font-size: 11px;
+  }
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.btn {
+  background-color: #10b981;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #059669;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
