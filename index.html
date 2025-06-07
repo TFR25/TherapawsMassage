@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Therapaws | Small Animal Massage</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preload" as="image" href="images/1.png">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container" class="logo-title">
+        <img src="images/logo.png" alt="Therapaws Logo" class="logo" />
+        <h1 class="business-name">Therapaws Massage</h1>
+        <button class="menu-toggle">&#9776;</button>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="benefits.html">Benefits</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h2>Relaxation for Your Best Friend</h2>
+        <p>
+          Gentle, therapeutic massage for dogs that reduces stress, promotes
+          healing, and deepens the human-canine bond.
+        </p>
+        <!-- <a href="#booking">Book a Session</a> -->
+      </div>
+
+      <!-- Image Slideshow-->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="images/1.webp" style="width:100%" loading="eager">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/2.webp" style="width:100%" loading="eager">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/3.webp" style="width:100%" loading="eager">
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <h3 class="section-title">Our Services</h3>
+        <div class="services-grid">
+          <div class="service-box">
+            <h4>Relaxation Massage</h4>
+            <p>Promotes calmness, circulation, and joint mobility.</p>
+          </div>
+          <div class="service-box">
+            <h4>Therapeutic Massage</h4>
+            <p>
+              Ideal for senior dogs, post-surgery recovery, or chronic pain.
+            </p>
+          </div>
+          <div class="service-box">
+            <h4>Puppy Massage</h4>
+            <p>
+              Gentle touch for growing pups — helps with socialization and
+              bonding.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="hero">
+      <div class="container text-center">
+        <h3 class="section-title">About the Therapist</h3>
+        <p>
+          Hi! I'm Jane Smith, a certified canine massage therapist with a love
+          for healing touch. I help dogs recover from stress, injury, and
+          age-related stiffness using proven techniques and plenty of love.
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <div class="container">
+        <h3 class="section-title">Happy Clients</h3>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-box">
+            <p>
+              "My senior lab has more energy than ever after just two sessions!
+              Highly recommend TheraPaws Massage."
+            </p>
+            <footer>- Sarah & Max</footer>
+          </blockquote>
+          <blockquote class="testimonial-box">
+            <p>
+              "Jane was so gentle with our rescue pup. He was nervous at first
+              but absolutely melted into the massage!"
+            </p>
+            <footer>- Rachel & Teddy</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <!-- <section id="booking" class="hero">
+      <div class="container text-center">
+        <h3 class="section-title">Schedule Your Dog's Massage</h3>
+        <p>Use our easy calendar tool to book your next session.</p>
+        <div class="calendar-embed">
+          <iframe
+            src="https://calendly.com/your-calendly-username/dog-massage"
+            width="100%"
+            height="600"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container text-center">
+        <h3 class="section-title">Get in Touch</h3>
+        <!-- <p>
+          Email us at
+          <a href="mailto: youremail@email.com">info@therapaws.com</a>
+          or fill out the form below.
+        </p> -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="1d26ee6b-f69c-49b3-97de-d2dffa5b7955">
+          <input type="text" name="name" required placeholder="Your Name">
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <!-- Honeypot Spam Protection -->
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display: none"
+          />
+
+          <!-- Custom Confirmation / Success Page -->
+          <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+
+            <!-- Client email will be sent to email address you used to sign-up for your Access Key -->
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="copyright"></footer>
+    <script src="index.js?v=1" type="text/javascript"></script>
+  </body>
+</html>

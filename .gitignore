@@ -1,0 +1,57 @@
+# macOS system files
+.DS_Store
+
+# Node.js dependencies (if using build tools like Webpack or Parcel)
+node_modules/
+
+# Build/output folders
+dist/
+build/
+public/
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Environment or secret config files
+.env
+.env.local
+.env.*.local
+
+# Cache or dependency folders
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Core WordPress files (you shouldn’t track these)
+wp-admin/
+wp-includes/
+
+# OS/system/editor files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Environment files
+wp-config.php
+.env
+
+# Plugin and theme development
+node_modules/
+vendor/
+*.sql
+*.zip
+
+# Caching and uploads
+wp-content/cache/
+wp-content/uploads/
