@@ -110,17 +110,19 @@ nav a:hover {
 
   .main-nav.active {
     display: block;
+    background-color: #d1fae5; /* green-100 */
+    padding: 1rem 0; 
   }
 
   .main-nav ul {
-    display: flex;
-    justify-content: center; /* Center horizontally */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
     gap: 1rem;
-    list-style: none;
     padding: 0;
-    margin: 0 auto; /* Center the list itself */
+    margin: 0;
   }
 }
+
 /* About Me and BenefitsPage */
 .page {
   background-color: #f0fdf4; /* green-50 */
