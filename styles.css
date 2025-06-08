@@ -3,7 +3,7 @@
   --color-bg: white;
   --color-text: #1f2937; /* gray-800 */
 
-  --color-primary: #2563eb;  /* blue-600 */
+  --color-primary: #2563eb; /* blue-600 */
   --color-primary-dark: #1e40af; /* blue-800 */
   --color-primary-light: #dbeafe; /* blue-100 */
   --color-primary-xlight: #eff6ff; /* blue-50 */
@@ -125,7 +125,7 @@ nav a:hover {
   .main-nav.active {
     display: block;
     background-color: var(--color-primary-light);
-    padding: 1rem 0; 
+    padding: 1rem 0;
   }
 
   .main-nav ul {
@@ -147,7 +147,6 @@ nav a:hover {
 .page-bgd {
   background-color: var(--color-primary-xlight);
 }
-
 
 /* Hero Section */
 .hero {
@@ -316,7 +315,7 @@ img {
 @media only screen and (max-width: 300px) {
   .text {
     font-size: 11px;
-}
+  }
 }
 .btn {
   background-color: var(--color-accent);
@@ -338,4 +337,34 @@ img {
     margin: 1rem;
     padding: 1rem;
   }
+}
+
+.social-section {
+  background-color: var(--color-bg-light);
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.social-section p {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary-dark);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  color: var(--color-primary);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: var(--color-primary-dark);
+  transform: scale(1.1);
 }

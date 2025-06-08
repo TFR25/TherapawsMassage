@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Therapaws | Small Animal Massage</title>
     <link href="styles.css" rel="stylesheet" />
-    <link rel="preload" as="image" href="images/1.png">
+    <link rel="preload" as="image" href="images/1.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Header -->
@@ -40,22 +44,22 @@
       <!-- Image Slideshow-->
       <div class="slideshow-container">
         <div class="mySlides fade">
-            <img src="images/1.webp" style="width:100%" loading="eager">
+          <img src="images/1.webp" style="width: 100%" loading="eager" />
         </div>
 
         <div class="mySlides fade">
-          <img src="images/2.webp" style="width:100%" loading="eager">
+          <img src="images/2.webp" style="width: 100%" loading="eager" />
         </div>
 
         <div class="mySlides fade">
-          <img src="images/3.webp" style="width:100%" loading="eager">
+          <img src="images/3.webp" style="width: 100%" loading="eager" />
         </div>
       </div>
-      <br>
-      <div style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
+      <br />
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
     </section>
 
@@ -146,9 +150,13 @@
           or fill out the form below.
         </p> -->
         <form action="https://api.web3forms.com/submit" method="POST">
-        <!-- Replace with your Access Key -->
-        <input type="hidden" name="access_key" value="1d26ee6b-f69c-49b3-97de-d2dffa5b7955">
-          <input type="text" name="name" required placeholder="Your Name">
+          <!-- Replace with your Access Key -->
+          <input
+            type="hidden"
+            name="access_key"
+            value="1d26ee6b-f69c-49b3-97de-d2dffa5b7955"
+          />
+          <input type="text" name="name" required placeholder="Your Name" />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea
             name="message"
@@ -166,10 +174,30 @@
           <!-- Custom Confirmation / Success Page -->
           <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
 
-
-            <!-- Client email will be sent to email address you used to sign-up for your Access Key -->
+          <!-- Client email will be sent to email address you used to sign-up for your Access Key -->
           <button class="btn" type="submit">Send Message</button>
         </form>
+      </div>
+    </section>
+    <!-- Social Media Section -->
+    <section class="social-section">
+      <div class="container social-container">
+        <p>Follow us on social media:</p>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
       </div>
     </section>
 
